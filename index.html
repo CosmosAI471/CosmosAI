@@ -1,1 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cosmos AI (Developers)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+      background: #f9fafb;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 240px;
+      background: #1a1a1a;
+      color: #fff;
+      padding: 20px;
+    }
+
+    .sidebar h2 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+    .sidebar nav a {
+      display: block;
+      color: #ccc;
+      text-decoration: none;
+      margin-bottom: 15px;
+      transition: 0.2s;
+    }
+
+    .sidebar nav a:hover {
+      color: #fff;
+    }
+
+    /* Main Content */
+    .main {
+      flex: 1;
+      padding: 40px;
+    }
+
+    .main h1 {
+      font-size: 36px;
+      font-weight: 600;
+      margin-bottom: 40px;
+      color: #1a1a1a;
+    }
+
+    .tiles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .tile {
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+      text-decoration: none;
+      color: #1a1a1a;
+    }
+
+    .tile:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 12px rgba(0,0,0,0.1);
+    }
+
+    .tile h3 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .tile p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .sidebar {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>Cosmos AI</h2>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">GitHub</a>
+      <a href="#">Contact</a>
+    </nav>
+  </div>
+
+  <div class="main">
+    <h1>Cosmos AI (Developers)</h1>
+    <div class="tiles">
+      <a class="tile" href="https://yourspace.hf.space" target="_blank">
+        <h3>Luna AI</h3>
+        <p>Chatbot with coding, reasoning, and smart web search.</p>
+      </a>
+
+      <a class="tile" href="https://your-map-app.github.io" target="_blank">
+        <h3>Cosmos Maps</h3>
+        <p>(coming soon)Custom Google Maps-like app with live tracking and POIs.</p>
+      </a>
+
+      <a class="tile" href="https://cosmosai471.github.io/Together" target="_blank">
+        <h3>Together</h3>
+        <p>Real-time WebRTC-based voice calling system with chat functionality just like whatsapp</p>
+      </a>
+
+      <a class="tile" href="https://huggingface.co/spaces/cosmosai471/Luna" target="_blank">
+        <h3>Luna 2.0</h3>
+        <p>The best version of Luna (chatbot) we have made yet</p>
+      </a>
+
+    </div>
+  </div>
+
+</body>
+</html>
 
